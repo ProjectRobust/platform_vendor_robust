@@ -1,12 +1,4 @@
 bootstrap_go_package {
-    name: "soong-robust",
-    pkgPath: "robust/soong/android",
-    srcs: [
-        "android/variable.go",
-    ],
-}
-
-bootstrap_go_package {
     name: "soong-robust-generator",
     pkgPath: "robust/soong/generator",
     deps: [
