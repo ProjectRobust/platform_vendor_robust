@@ -60,6 +60,9 @@ PRODUCT_PACKAGES += \
 # For ringtones that rely on forward lock encryption
 PRODUCT_PACKAGES += libfwdlockengine
 
+# Robust
+PRODUCT_PACKAGES += robustbatteryservice
+
 # System libraries commonly depended on by things on the system_ext or product partitions.
 # These lists will be pruned periodically.
 PRODUCT_PACKAGES += \
