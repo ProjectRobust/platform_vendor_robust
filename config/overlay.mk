@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2022 Robust Group LLC.
+# Copyright (C) 2021 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,13 +12,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-# Inherit from our versioning
-$(call inherit-product, vendor/robust/config/versioning.mk)
+# Vendor overlays
+PRODUCT_PACKAGE_OVERLAYS += vendor/robust/overlay
 
-# Inherit from our overlay
-$(call inherit-product, vendor/robust/config/overlay.mk)
-
-# Inherit from our kernel/header generator
-$(call inherit-product, vendor/robust/config/BoardConfigRobust.mk)
