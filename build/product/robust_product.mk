@@ -57,6 +57,9 @@ PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio.hearing_aid.default
 
+# LawnChair
+include vendor/robust-prebuilts/packages/apps/Lawnchair/lawnchair.mk
+
 # For ringtones that rely on forward lock encryption
 PRODUCT_PACKAGES += libfwdlockengine
 
